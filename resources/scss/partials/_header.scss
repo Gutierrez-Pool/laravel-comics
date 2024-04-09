@@ -1,0 +1,35 @@
+.top-header {
+    display: flex;
+    justify-content: end;
+
+    background-color: cornflowerblue;
+}
+
+nav {
+
+    display: flex;
+        
+    ul {
+        display: flex;
+        justify-content: center;
+
+        list-style-type: none;
+
+        li {
+            padding:  8px 16px; 
+
+            // &.active {
+            //     background-color: $primary;
+            // }
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.jumbotron {
+    height: 400px;
+    overflow: hidden;
+}
