@@ -13,9 +13,10 @@
                         <div class="comic-image">
                             <img class="comic-img" src="{{$comicItem['thumb']}}" alt="">
                         </div>
-                        <h4 class="comic-title">{{ $comicItem['title'] }}</h4>
+                        <h6 class="comic-title">{{ $comicItem['title'] }}</h6>
                     </div>
-                    
+                    {{-- <a href="{{route('comic')}}" class="">
+                    </a> --}}
                 @endforeach
     
                 <button class="btn">

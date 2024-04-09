@@ -1,33 +1,51 @@
 .top-header {
-    display: flex;
-    justify-content: end;
 
     background-color: cornflowerblue;
+
+    .container {
+        display: flex;
+        justify-content: end;
+    }
 }
 
 nav {
-
     display: flex;
-        
+    justify-content: space-between;
+    align-items: center;
+
+    height: 118px;
+
+    #logo {
+        // width: 80px;
+        height: 100%;
+        padding: 18px;
+    }
+
     ul {
         display: flex;
-        justify-content: center;
-
+        justify-content: space-around;
         list-style-type: none;
 
+        margin-top: 15px;
+        padding: 0px 30px;
+        gap: 30px;
+
+
         li {
-            padding:  8px 16px; 
+            font-weight: bold;
+            cursor: pointer;
 
-            // &.active {
-            //     background-color: $primary;
-            // }
+            text-transform: uppercase;
+            padding: 45px 0px;
+            color: black;
 
-            a {
-                text-decoration: none;
+            &.active {
+                color: #0282f9;
+                border-bottom: 5px solid #0282f9;
             }
         }
     }
-}
+}   
 
 .jumbotron {
     height: 400px;
