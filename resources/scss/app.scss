@@ -1,3 +1,66 @@
 @import "~bootstrap/scss/bootstrap";
 
 @import './partials/header';
+@import './partials/footer';
+
+#comics {
+
+    color: white;
+    background-color: #1c1c1c;
+
+    .comics-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        position: relative;
+
+        // height: 670px;
+    
+        padding: 52px 30px;
+        gap: 50px 27px;
+        
+        .current-series {
+            position: absolute;
+            top: -27px;
+            left: 0;
+
+            background-color: #0282f9;
+
+            padding: 15px 30px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .comic {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        
+            width: calc(100% / 6 - 27px / 6 * 5);
+            gap: 20px;
+        
+            .comic-image {
+                width: 185px;
+                height: 185px;
+        
+                overflow: hidden;
+                img {
+                    width: 100%;
+                }
+            }
+        
+        }        
+
+        .btn {
+            padding: 13px 60px;
+            
+            text-transform: uppercase;
+            font-weight: bold;
+            
+            border: none;
+            background-color: #0282f9;
+            color: white;
+        }
+    }
+}
